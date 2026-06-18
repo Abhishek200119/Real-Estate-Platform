@@ -1,29 +1,114 @@
+import { ArrowUpRight, MapPin } from "lucide-react";
+
 const locations = [
-  "Bangalore",
-  "Mumbai",
-  "Delhi",
-  "Hyderabad",
+  {
+    city: "Bangalore",
+    properties: "2,450+ Properties",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+  },
+  {
+    city: "Mumbai",
+    properties: "1,980+ Properties",
+    image:
+      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2",
+  },
+  {
+    city: "Delhi",
+    properties: "2,100+ Properties",
+    image:
+      "https://images.unsplash.com/photo-1587474260584-136574528ed5",
+  },
+  {
+    city: "Hyderabad",
+    properties: "1,750+ Properties",
+    image:
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+  },
 ];
 
 const PopularLocations = () => {
   return (
     <section className="py-24 bg-[#f7f9fa]">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center mb-14">
-          Popular Locations
-        </h2>
 
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <span
+            className="px-4 py-2 rounded-full text-sm font-medium"
+            style={{
+              backgroundColor: "#e1bc91",
+              color: "#0e1617",
+            }}
+          >
+            Explore Cities
+          </span>
+
+          <h2 className="text-5xl font-bold mt-6 text-[#0e1617]">
+            Popular Locations
+          </h2>
+
+          <p className="text-gray-500 mt-4">
+            Discover premium properties in India's
+            most sought-after cities.
+          </p>
+        </div>
+
+        {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {locations.map((city) => (
+
+          {locations.map((location) => (
             <div
-              key={city}
-              className="bg-white rounded-3xl p-10 text-center shadow-md"
+              key={location.city}
+              className="group relative overflow-hidden rounded-[32px] h-[420px] cursor-pointer"
             >
-              <h3 className="text-2xl font-semibold">
-                {city}
-              </h3>
+              {/* Image */}
+              <img
+                src={location.image}
+                alt={location.city}
+                className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
+              />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+
+                <div className="flex items-center gap-2 mb-3">
+                  <MapPin size={18} />
+                  <span className="text-sm">
+                    Prime Location
+                  </span>
+                </div>
+
+                <h3 className="text-3xl font-bold">
+                  {location.city}
+                </h3>
+
+                <p className="text-white/80 mt-2">
+                  {location.properties}
+                </p>
+
+                <div className="mt-5 flex items-center justify-between">
+                  <span className="text-sm">
+                    Explore Now
+                  </span>
+
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:translate-x-1"
+                    style={{
+                      backgroundColor: "#62959c",
+                    }}
+                  >
+                    <ArrowUpRight size={18} />
+                  </div>
+                </div>
+
+              </div>
             </div>
           ))}
+
         </div>
       </div>
     </section>
