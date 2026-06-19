@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -23,12 +24,17 @@ const Footer = () => {
 
           {/* Company Info */}
           <div>
-            <h2
-              className="text-3xl font-bold"
-              style={{ color: "#62959c" }}
+            <Link
+              to="/"
+              onClick={() => window.scrollTo(0, 0)}
             >
-              EstateHub
-            </h2>
+              <h2
+                className="text-3xl font-bold"
+                style={{ color: "#62959c" }}
+              >
+                EstateHub
+              </h2>
+            </Link>
 
             <p className="text-gray-300 mt-5 leading-7">
               Discover premium properties, luxury villas,
@@ -37,35 +43,25 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-4 mt-6">
+              <FaFacebookF
+                size={20}
+                className="text-white hover:text-[#62959c] transition cursor-pointer"
+              />
 
-              <a href="#">
-                <FaFacebookF
-                  size={20}
-                  className="text-white hover:text-[#62959c] transition"
-                />
-              </a>
+              <FaInstagram
+                size={20}
+                className="text-white hover:text-[#62959c] transition cursor-pointer"
+              />
 
-              <a href="#">
-                <FaInstagram
-                  size={20}
-                  className="text-white hover:text-[#62959c] transition"
-                />
-              </a>
+              <FaTwitter
+                size={20}
+                className="text-white hover:text-[#62959c] transition cursor-pointer"
+              />
 
-              <a href="#">
-                <FaTwitter
-                  size={20}
-                  className="text-white hover:text-[#62959c] transition"
-                />
-              </a>
-
-              <a href="#">
-                <FaLinkedinIn
-                  size={20}
-                  className="text-white hover:text-[#62959c] transition"
-                />
-              </a>
-
+              <FaLinkedinIn
+                size={20}
+                className="text-white hover:text-[#62959c] transition cursor-pointer"
+              />
             </div>
           </div>
 
@@ -79,21 +75,39 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-300">
-              <li className="hover:text-white cursor-pointer">
-                Home
+
+              <li>
+                <Link
+                  to="/"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="hover:text-white transition"
+                >
+                  Home
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer">
-                Properties
+
+              <li>
+                <Link
+                  to="/properties"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="hover:text-white transition"
+                >
+                  Properties
+                </Link>
               </li>
+
               <li className="hover:text-white cursor-pointer">
                 Agents
               </li>
+
               <li className="hover:text-white cursor-pointer">
                 About Us
               </li>
+
               <li className="hover:text-white cursor-pointer">
                 Contact Us
               </li>
+
             </ul>
           </div>
 
@@ -107,15 +121,65 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-300">
-              <li>Apartments</li>
-              <li>Luxury Villas</li>
-              <li>Penthouses</li>
-              <li>Commercial Spaces</li>
-              <li>Farm Houses</li>
+
+              <li>
+                <Link
+                  to="/property/1"
+                  className="hover:text-white transition"
+                >
+                  Apartments
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/property/2"
+                  className="hover:text-white transition"
+                >
+                  Luxury Villas
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/property/3"
+                  className="hover:text-white transition"
+                >
+                  Penthouses
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/property/4"
+                  className="hover:text-white transition"
+                >
+                  Commercial Spaces
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/property/5"
+                  className="hover:text-white transition"
+                >
+                  Beach Houses
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/property/6"
+                  className="hover:text-white transition"
+                >
+                  Farm Houses
+                </Link>
+              </li>
+
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
             <h3
               className="text-xl font-semibold mb-5"
@@ -147,9 +211,17 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-
         <div
-          className="border-t mt-12 pt-6 flex flex-col md:flex-row justify-between items-center"
+          className="
+            border-t
+            mt-12
+            pt-6
+            flex
+            flex-col
+            md:flex-row
+            justify-between
+            items-center
+          "
           style={{
             borderColor: "rgba(255,255,255,0.1)",
           }}
@@ -159,13 +231,13 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-6 text-sm text-gray-400 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white">
+            <span className="hover:text-white cursor-pointer">
               Privacy Policy
-            </a>
+            </span>
 
-            <a href="#" className="hover:text-white">
+            <span className="hover:text-white cursor-pointer">
               Terms & Conditions
-            </a>
+            </span>
           </div>
         </div>
 

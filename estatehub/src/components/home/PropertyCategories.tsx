@@ -1,45 +1,58 @@
+import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
 const categories = [
   {
+    id: 1,
     title: "Apartments",
     count: "1,250+ Properties",
-    description: "Modern urban living with premium amenities and city connectivity.",
+    description:
+      "Modern urban living with premium amenities and city connectivity.",
     image:
       "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&auto=format&fit=crop",
   },
   {
+    id: 2,
     title: "Luxury Villas",
     count: "850+ Properties",
-    description: "Private pools, spacious gardens and world-class interiors.",
+    description:
+      "Private pools, spacious gardens and world-class interiors.",
     image:
       "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&auto=format&fit=crop",
   },
   {
+    id: 3,
     title: "Penthouses",
     count: "450+ Properties",
-    description: "Exclusive skyline views and premium living experiences.",
+    description:
+      "Exclusive skyline views and premium living experiences.",
     image:
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&auto=format&fit=crop",
   },
   {
+    id: 4,
     title: "Commercial",
     count: "620+ Properties",
-    description: "Prime office spaces and retail opportunities for businesses.",
+    description:
+      "Prime office spaces and retail opportunities for businesses.",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop",
   },
   {
+    id: 5,
     title: "Beach Houses",
     count: "280+ Properties",
-    description: "Luxury waterfront homes with breathtaking ocean views.",
+    description:
+      "Luxury waterfront homes with breathtaking ocean views.",
     image:
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop",
   },
   {
+    id: 6,
     title: "Farm Houses",
     count: "340+ Properties",
-    description: "Peaceful countryside retreats surrounded by nature.",
+    description:
+      "Peaceful countryside retreats surrounded by nature.",
     image:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop",
   },
@@ -49,7 +62,6 @@ const PropertyCategories = () => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Header */}
         <div className="text-center mb-16">
           <span
@@ -69,24 +81,23 @@ const PropertyCategories = () => {
           <p className="text-gray-500 mt-5 max-w-3xl mx-auto leading-8">
             Explore a wide range of premium real estate options,
             from luxury villas and modern apartments to commercial
-            spaces and beachfront properties. Find the perfect
-            property that matches your lifestyle and investment goals.
+            spaces and beachfront properties.
           </p>
         </div>
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
           {categories.map((item) => (
-            <div
-              key={item.title}
+            <Link
+              key={item.id}
+              to={`/property/${item.id}`}
               className="
                 group
                 relative
                 h-[450px]
                 overflow-hidden
                 rounded-[32px]
-                cursor-pointer
+                block
                 shadow-lg
                 transition-all
                 duration-500
@@ -94,7 +105,6 @@ const PropertyCategories = () => {
                 hover:shadow-2xl
               "
             >
-              {/* Image */}
               <img
                 src={item.image}
                 alt={item.title}
@@ -110,10 +120,8 @@ const PropertyCategories = () => {
                 "
               />
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
-              {/* Hover Overlay */}
               <div
                 className="
                   absolute
@@ -129,9 +137,7 @@ const PropertyCategories = () => {
                 }}
               />
 
-              {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
-
                 <div className="mb-4">
                   <span
                     className="px-3 py-1 rounded-full text-xs font-medium"
@@ -189,11 +195,9 @@ const PropertyCategories = () => {
                     />
                   </div>
                 </div>
-
               </div>
-            </div>
+            </Link>
           ))}
-
         </div>
       </div>
     </section>
