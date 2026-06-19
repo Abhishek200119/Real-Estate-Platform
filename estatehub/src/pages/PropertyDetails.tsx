@@ -28,25 +28,7 @@ const PropertyDetails = () => {
       <div className="bg-[#f7f9fa] min-h-screen">
         <div className="max-w-7xl mx-auto py-20 px-6">
 
-          {/* Back Home */}
-          {/* <Link
-            to="/"
-            className="
-              inline-flex
-              items-center
-              gap-2
-              mb-8
-              px-5
-              py-3
-              rounded-xl
-              text-white
-            "
-            style={{
-              backgroundColor: "#62959c",
-            }}
-          >
-            ← Back To Home
-          </Link> */}
+        
 
           {/* Image */}
           <img

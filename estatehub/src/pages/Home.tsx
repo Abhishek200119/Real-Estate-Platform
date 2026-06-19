@@ -1,6 +1,5 @@
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/home/Hero";
-import FeaturedProperties from "../components/home/FeaturedProperties";
 import PopularLocations from "../components/home/PopularLocations";
 import PropertyCategories from "../components/home/PropertyCategories";
 import TopAgents from "../components/home/TopAgents";
@@ -13,7 +12,6 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
-      <FeaturedProperties />
       <PopularLocations />
       <PropertyCategories />
       <TopAgents />
