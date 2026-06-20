@@ -38,7 +38,20 @@ const Navbar = () => {
           >
             Properties
           </Link>
-
+          <Link
+            to="/agents"
+            className="font-medium hover:opacity-70"
+            style={{ color: "#0e1617" }}
+          >
+            Agents
+          </Link>
+          <Link
+            to="/about"
+            className="font-medium hover:opacity-70"
+            style={{ color: "#0e1617" }}
+          >
+            About Us
+          </Link>
           <Link
             to="/contact"
             className="

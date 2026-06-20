@@ -1,165 +1,164 @@
-import { Search, MapPin, Building2 } from "lucide-react";
+import { Search, MapPin } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const Counter = ({ end }: { end: number }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+
+    const duration = 2000;
+    const increment = end / (duration / 16);
+
+    const timer = setInterval(() => {
+      start += increment;
+
+      if (start >= end) {
+        setCount(end);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 16);
+
+    return () => clearInterval(timer);
+  }, [end]);
+
+  return <>{count.toLocaleString()}</>;
+};
 
 const Hero = () => {
   return (
-    <section
-      className="min-h-screen flex items-center"
-      style={{ backgroundColor: "#f7f9fa" }}
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background Image */}
+      <img
+        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070&auto=format&fit=crop"
+        alt="Luxury Property"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
 
-          {/* Left Side */}
-          <div>
-            <span
-              className="px-4 py-2 rounded-full text-sm font-medium"
-              style={{
-                backgroundColor: "#e1bc91",
-                color: "#0e1617",
-              }}
-            >
-              Premium Real Estate
-            </span>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
-            <h1
-              className="text-5xl md:text-7xl font-bold mt-6 leading-tight"
-              style={{ color: "#0e1617" }}
-            >
-              Find Your
-              <br />
-              Dream Home
+      {/* Content */}
+      <div className="relative z-10 min-h-screen flex items-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          <div className="max-w-5xl">
+            {/* Heading */}
+            <h1 className="text-white text-5xl md:text-7xl xl:text-8xl font-bold leading-[1.05]">
+              Discover
+              <span className="block text-[#e1bc91]">
+                Luxury Living
+              </span>
+              Across India
             </h1>
 
-            <p
-              className="text-lg mt-6 max-w-xl"
-              style={{ color: "#62959c" }}
-            >
-              Explore luxury villas, apartments and premium
-              properties in the best locations across India.
+            {/* Description */}
+            <p className="text-gray-200 text-lg md:text-xl mt-8 max-w-3xl leading-8">
+              Explore premium villas, luxury apartments, penthouses,
+              and investment properties in India's most desirable
+              locations. Find your perfect home with confidence.
             </p>
 
             {/* Search Box */}
-            <div className="bg-white rounded-3xl shadow-xl p-5 mt-10">
-              <div className="grid md:grid-cols-4 gap-4">
+            <div className="mt-14 bg-white/10 backdrop-blur-xl border border-white/20 rounded-[32px] p-5 max-w-5xl shadow-2xl">
+              <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+                {/* Location */}
+                <div className="flex items-center gap-3 bg-white/10 rounded-2xl px-5 py-4">
+                  <MapPin size={20} className="text-white" />
 
-                <div className="flex items-center gap-2 border rounded-xl px-4">
-                  <MapPin size={18} />
                   <input
                     type="text"
-                    placeholder="Location"
-                    className="outline-none py-3 w-full"
+                    placeholder="Enter Location"
+                    className="w-full bg-transparent outline-none text-white placeholder:text-gray-300"
                   />
                 </div>
 
-                <select className="border rounded-xl px-4 py-3">
-                  <option>Property Type</option>
-                  <option>Apartment</option>
-                  <option>Villa</option>
-                  <option>Commercial</option>
+                {/* Property Type */}
+                <select className="bg-white/10 rounded-2xl px-5 py-4 text-white outline-none cursor-pointer">
+                  <option className="text-black">
+                    Property Type
+                  </option>
+                  <option className="text-black">
+                    Apartment
+                  </option>
+                  <option className="text-black">
+                    Luxury Villa
+                  </option>
+                  <option className="text-black">
+                    Penthouse
+                  </option>
+                  <option className="text-black">
+                    Commercial
+                  </option>
                 </select>
 
-                <select className="border rounded-xl px-4 py-3">
-                  <option>Budget</option>
-                  <option>₹50L - ₹1Cr</option>
-                  <option>₹1Cr - ₹2Cr</option>
-                  <option>₹2Cr+</option>
+                {/* Budget */}
+                <select className="bg-white/10 rounded-2xl px-5 py-4 text-white outline-none cursor-pointer">
+                  <option className="text-black">
+                    Budget Range
+                  </option>
+                  <option className="text-black">
+                    ₹50L - ₹1Cr
+                  </option>
+                  <option className="text-black">
+                    ₹1Cr - ₹2Cr
+                  </option>
+                  <option className="text-black">
+                    ₹2Cr - ₹5Cr
+                  </option>
+                  <option className="text-black">
+                    ₹5Cr+
+                  </option>
                 </select>
 
-                <button
-                  className="rounded-xl text-white font-semibold flex items-center justify-center gap-2"
-                  style={{ backgroundColor: "#62959c" }}
-                >
-                  <Search size={18} />
+                {/* Search Button */}
+                <button className="bg-[#e1bc91] hover:bg-[#d6ac7a] text-[#0e1617] rounded-2xl font-semibold flex items-center justify-center gap-3 transition-all duration-300">
+                  <Search size={20} />
                   Search
                 </button>
               </div>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-              <div>
-                <h3
-                  className="text-3xl font-bold"
-                  style={{ color: "#62959c" }}
-                >
-                  5000+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14 max-w-5xl">
+              <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6">
+                <h3 className="text-[#e1bc91] text-3xl font-bold">
+                  <Counter end={5000} />+
                 </h3>
-                <p>Properties</p>
+                <p className="text-gray-300 mt-2">
+                  Properties
+                </p>
               </div>
 
-              <div>
-                <h3
-                  className="text-3xl font-bold"
-                  style={{ color: "#62959c" }}
-                >
-                  250+
+              <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6">
+                <h3 className="text-[#e1bc91] text-3xl font-bold">
+                  <Counter end={250} />+
                 </h3>
-                <p>Agents</p>
+                <p className="text-gray-300 mt-2">
+                  Agents
+                </p>
               </div>
 
-              <div>
-                <h3
-                  className="text-3xl font-bold"
-                  style={{ color: "#62959c" }}
-                >
-                  50+
+              <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6">
+                <h3 className="text-[#e1bc91] text-3xl font-bold">
+                  <Counter end={50} />+
                 </h3>
-                <p>Cities</p>
+                <p className="text-gray-300 mt-2">
+                  Cities
+                </p>
               </div>
 
-              <div>
-                <h3
-                  className="text-3xl font-bold"
-                  style={{ color: "#62959c" }}
-                >
-                  10K+
+              <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6">
+                <h3 className="text-[#e1bc91] text-3xl font-bold">
+                  <Counter end={10000} />+
                 </h3>
-                <p>Clients</p>
+                <p className="text-gray-300 mt-2">
+                  Happy Clients
+                </p>
               </div>
             </div>
-          </div>
-
-          {/* Right Side */}
-          <div className="relative">
-
-            <img
-              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d"
-              alt="Luxury Home"
-              className="rounded-[40px] h-[650px] w-full object-cover shadow-2xl"
-            />
-
-            {/* Floating Card */}
-            <div
-              className="absolute bottom-6 left-6 bg-white rounded-3xl p-5 shadow-xl w-72"
-            >
-              <div className="flex items-center gap-2">
-                <Building2
-                  size={18}
-                  color="#62959c"
-                />
-                <span className="font-semibold">
-                  Luxury Villa
-                </span>
-              </div>
-
-              <h3
-                className="text-3xl font-bold mt-3"
-                style={{ color: "#0e1617" }}
-              >
-                ₹2.5 Cr
-              </h3>
-
-              <p className="text-gray-500 mt-2">
-                Whitefield, Bangalore
-              </p>
-
-              <div className="flex gap-4 mt-4 text-sm">
-                <span>🛏 4 Beds</span>
-                <span>🚿 3 Baths</span>
-                <span>🚗 2 Parking</span>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>

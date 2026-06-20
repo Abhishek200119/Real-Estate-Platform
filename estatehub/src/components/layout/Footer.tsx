@@ -43,25 +43,51 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-4 mt-6">
-              <FaFacebookF
-                size={20}
-                className="text-white hover:text-[#62959c] transition cursor-pointer"
-              />
 
-              <FaInstagram
-                size={20}
-                className="text-white hover:text-[#62959c] transition cursor-pointer"
-              />
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF
+                  size={20}
+                  className="text-white hover:text-[#62959c] transition cursor-pointer"
+                />
+              </a>
 
-              <FaTwitter
-                size={20}
-                className="text-white hover:text-[#62959c] transition cursor-pointer"
-              />
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram
+                  size={20}
+                  className="text-white hover:text-[#62959c] transition cursor-pointer"
+                />
+              </a>
 
-              <FaLinkedinIn
-                size={20}
-                className="text-white hover:text-[#62959c] transition cursor-pointer"
-              />
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter
+                  size={20}
+                  className="text-white hover:text-[#62959c] transition cursor-pointer"
+                />
+              </a>
+
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn
+                  size={20}
+                  className="text-white hover:text-[#62959c] transition cursor-pointer"
+                />
+              </a>
+
             </div>
           </div>
 
@@ -96,16 +122,34 @@ const Footer = () => {
                 </Link>
               </li>
 
-              <li className="hover:text-white cursor-pointer">
-                Agents
+              <li>
+                <Link
+                  to="/agents"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="hover:text-white transition"
+                >
+                  Agents
+                </Link>
               </li>
 
-              <li className="hover:text-white cursor-pointer">
-                About Us
+              <li>
+                <Link
+                  to="/about"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="hover:text-white transition"
+                >
+                  About Us
+                </Link>
               </li>
 
-              <li className="hover:text-white cursor-pointer">
-                Contact Us
+              <li>
+                <Link
+                  to="/contact"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="hover:text-white transition"
+                >
+                  Contact Us
+                </Link>
               </li>
 
             </ul>
@@ -179,20 +223,20 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Information */}
           <div>
             <h3
               className="text-xl font-semibold mb-5"
               style={{ color: "#e1bc91" }}
             >
-              Contact Us
+              Contact Information
             </h3>
 
             <div className="space-y-4">
 
               <div className="flex items-center gap-3 text-gray-300">
                 <MapPin size={18} />
-                <span>Bangalore, Karnataka</span>
+                <span>Bangalore, Karnataka, India</span>
               </div>
 
               <div className="flex items-center gap-3 text-gray-300">
@@ -231,13 +275,21 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-6 text-sm text-gray-400 mt-4 md:mt-0">
-            <span className="hover:text-white cursor-pointer">
-              Privacy Policy
-            </span>
 
-            <span className="hover:text-white cursor-pointer">
+            <Link
+              to="/privacy-policy"
+              className="hover:text-white transition"
+            >
+              Privacy Policy
+            </Link>
+
+            <Link
+              to="/terms"
+              className="hover:text-white transition"
+            >
               Terms & Conditions
-            </span>
+            </Link>
+
           </div>
         </div>
 
