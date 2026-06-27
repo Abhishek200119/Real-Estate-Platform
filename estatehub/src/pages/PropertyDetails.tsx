@@ -3,6 +3,25 @@ import { properties } from "../data/properties";
 
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import Image13 from "../assets/13.jpg";
+import Image14 from "../assets/14.jpg";
+import Image15 from "../assets/15.jpg";
+import Image16 from "../assets/16.jpg";
+import Image17 from "../assets/17.jpg";
+import Image18 from "../assets/18.jpg";
+import Image19 from "../assets/19.jpg";
+import Image20 from "../assets/20.jpg";
+import Image21 from "../assets/21.jpg";
+import Image22 from "../assets/22.jpg";
+import Image23 from "../assets/23.jpg";
+import Image24 from "../assets/24.jpg";
+import Image25 from "../assets/25.jpg";
+import Image26 from "../assets/26.jpg";
+import Image27 from "../assets/27.jpg";
+import Image28 from "../assets/28.jpg";
+import Image29 from "../assets/29.jpg";
+import Image30 from "../assets/30.jpg";
+import Image31 from "../assets/31.jpg";
 
 const PropertyDetails = () => {
   const { id } = useParams();
@@ -85,7 +104,7 @@ const PropertyDetails = () => {
               {/* Bedrooms */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+                  src={Image13}
                   alt="Bedroom"
                   className="h-44 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -104,7 +123,7 @@ const PropertyDetails = () => {
               {/* Bathrooms */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80"
+                  src={Image14}
                   alt="Bathroom"
                   className="h-44 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -123,11 +142,10 @@ const PropertyDetails = () => {
               {/* Area */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
+                  src={Image15}
                   alt="Area"
                   className="h-44 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
-
                 <div className="p-6">
                   <h3 className="text-3xl font-bold text-[#62959c]">
                     {property.area}
@@ -142,11 +160,10 @@ const PropertyDetails = () => {
               {/* Status */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80"
+                  src={Image16}
                   alt="Property Status"
                   className="h-44 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
-
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-[#62959c]">
                     {property.status}
@@ -203,25 +220,25 @@ const PropertyDetails = () => {
             <div className="grid md:grid-cols-4 gap-4">
 
               <img
-                src={property.image}
+                src={Image17}
                 alt=""
                 className="rounded-3xl h-64 w-full object-cover"
               />
 
               <img
-                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1000"
+                src={Image18}
                 alt=""
                 className="rounded-3xl h-64 w-full object-cover"
               />
 
               <img
-                src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1000"
+                src={Image19}
                 alt=""
                 className="rounded-3xl h-64 w-full object-cover"
               />
 
               <img
-                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000"
+                src={Image20}
                 alt=""
                 className="rounded-3xl h-64 w-full object-cover"
               />
@@ -240,11 +257,10 @@ const PropertyDetails = () => {
               {/* Swimming Pool */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+                  src={Image21}
                   alt="Swimming Pool"
                   className="h-56 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
-
                 <div className="p-6">
                   <h3 className="text-2xl font-bold">
                     Infinity Pool
@@ -259,7 +275,7 @@ const PropertyDetails = () => {
               {/* Parking */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200"
+                  src={Image22}
                   alt="Parking"
                   className="h-56 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -278,7 +294,7 @@ const PropertyDetails = () => {
               {/* Gym */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200"
+                  src={Image23}
                   alt="Gym"
                   className="h-56 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -297,7 +313,7 @@ const PropertyDetails = () => {
               {/* Garden */}
               <div className="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
                 <img
-                  src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200"
+                  src={Image24}
                   alt="Garden"
                   className="h-56 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
@@ -326,8 +342,9 @@ const PropertyDetails = () => {
 
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200"
+                  src={Image25}
                   className="h-72 w-full object-cover"
+                  alt="Master Bedroom"
                 />
 
                 <div className="p-6">
@@ -339,8 +356,9 @@ const PropertyDetails = () => {
 
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200"
+                  src={Image26}
                   className="h-72 w-full object-cover"
+                  alt="Modern Kitchen"
                 />
 
                 <div className="p-6">
@@ -364,7 +382,7 @@ const PropertyDetails = () => {
               {/* Airport */}
               <div className="bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                 <img
-                  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200"
+                  src={Image27}
                   alt="Airport"
                   className="h-52 w-full object-cover"
                 />
@@ -383,7 +401,7 @@ const PropertyDetails = () => {
               {/* School */}
               <div className="bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                 <img
-                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200"
+                  src={Image28}
                   alt="School"
                   className="h-52 w-full object-cover"
                 />
@@ -402,7 +420,7 @@ const PropertyDetails = () => {
               {/* Hospital */}
               <div className="bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                 <img
-                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200"
+                  src={Image29}
                   alt="Hospital"
                   className="h-52 w-full object-cover"
                 />
@@ -421,7 +439,7 @@ const PropertyDetails = () => {
               {/* Mall */}
               <div className="bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
                 <img
-                  src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=1200"
+                  src={Image30}
                   alt="Mall"
                   className="h-52 w-full object-cover"
                 />
@@ -439,69 +457,20 @@ const PropertyDetails = () => {
 
             </div>
           </div>
-          {/* Similar Properties */}
-          <div className="mt-20">
-            <h2 className="text-3xl font-bold mb-8">
-              Similar Properties
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
-
-              {properties
-                .filter((item) => item.id !== property.id)
-                .slice(0, 3)
-                .map((item) => (
-                  <Link
-                    key={item.id}
-                    to={`/property/${item.id}`}
-                    className="
-            bg-white
-            rounded-3xl
-            overflow-hidden
-            shadow-lg
-            hover:shadow-xl
-            transition
-          "
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="h-60 w-full object-cover"
-                    />
-
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold">
-                        {item.title}
-                      </h3>
-
-                      <p className="text-gray-500 mt-2">
-                        {item.location}
-                      </p>
-
-                      <h4 className="text-[#62959c] font-bold text-2xl mt-3">
-                        {item.price}
-                      </h4>
-                    </div>
-                  </Link>
-                ))}
-            </div>
-          </div>
-
 
           {/* Agent */}
           <div className="mt-16 bg-white rounded-[32px] p-8 shadow">
             <div className="flex items-center gap-6">
 
               <img
-                src="https://i.pravatar.cc/200?img=11"
+                src={Image31}
                 alt="Agent"
                 className="
-                  w-24
-                  h-24
-                  rounded-full
-                "
+    w-24
+    h-24
+    rounded-full
+  "
               />
-
               <div>
                 <h3 className="text-2xl font-bold">
                   Sarah Johnson

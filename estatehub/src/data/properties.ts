@@ -1,9 +1,15 @@
+import Image7 from "../assets/7.jpg";
+import Image8 from "../assets/8.jpg";
+import Image9 from "../assets/9.jpg";
+import Image10 from "../assets/10.jpg";
+import Image11 from "../assets/11.jpg";
+import Image12 from "../assets/12.jpg";
+
 export const properties = [
   {
     id: 1,
     title: "Apartments",
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200",
+    image: Image7,
     price: "₹1.2 Cr",
     location: "Mumbai",
     bedrooms: 3,
@@ -26,8 +32,7 @@ export const properties = [
   {
     id: 2,
     title: "Luxury Villas",
-    image:
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200",
+    image: Image8,
     price: "₹4.5 Cr",
     location: "Bangalore",
     bedrooms: 5,
@@ -50,8 +55,7 @@ export const properties = [
   {
     id: 3,
     title: "Penthouses",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200",
+    image: Image9,
     price: "₹6 Cr",
     location: "Delhi",
     bedrooms: 4,
@@ -74,8 +78,7 @@ export const properties = [
   {
     id: 4,
     title: "Commercial",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200",
+    image: Image10,
     price: "₹3.2 Cr",
     location: "Hyderabad",
     bedrooms: 0,
@@ -98,8 +101,7 @@ export const properties = [
   {
     id: 5,
     title: "Beach Houses",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200",
+    image: Image11,
     price: "₹7.5 Cr",
     location: "Goa",
     bedrooms: 4,
@@ -122,8 +124,7 @@ export const properties = [
   {
     id: 6,
     title: "Farm Houses",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+    image: Image12,
     price: "₹5 Cr",
     location: "Pune",
     bedrooms: 6,

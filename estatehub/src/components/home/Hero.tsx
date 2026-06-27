@@ -1,5 +1,6 @@
 import { Search, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
+import HeroImage from "../../assets/2.jpg";
 
 const Counter = ({ end }: { end: number }) => {
   const [count, setCount] = useState(0);
@@ -31,11 +32,12 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background Image */}
-      <img
-        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070&auto=format&fit=crop"
-        alt="Luxury Property"
-        className="absolute inset-0 h-full w-full object-cover"
-      />
+  
+<img
+  src={HeroImage}
+  alt="Luxury Property"
+  className="absolute inset-0 h-full w-full object-cover"
+/>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50" />

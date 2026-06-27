@@ -2,13 +2,16 @@ import { Mail, Phone, Star } from "lucide-react";
 
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
-
+import Image31 from "../assets/31.jpg";
+import Image32 from "../assets/32.jpg";
+import Image33 from "../assets/33.jpg";
+import Image37 from "../assets/37.jpg";
 const agents = [
   {
     id: 1,
     name: "Sarah Johnson",
     role: "Senior Property Consultant",
-    image: "https://i.pravatar.cc/300?img=11",
+    image: Image31,
     rating: "4.9",
     experience: "10+ Years",
     sold: "250+",
@@ -20,7 +23,7 @@ const agents = [
     id: 2,
     name: "Michael Carter",
     role: "Real Estate Advisor",
-    image: "https://i.pravatar.cc/300?img=12",
+    image: Image32,
     rating: "4.8",
     experience: "8+ Years",
     sold: "180+",
@@ -32,7 +35,7 @@ const agents = [
     id: 3,
     name: "Emma Wilson",
     role: "Luxury Property Expert",
-    image: "https://i.pravatar.cc/300?img=13",
+    image: Image33,
     rating: "5.0",
     experience: "12+ Years",
     sold: "320+",
@@ -44,7 +47,7 @@ const agents = [
     id: 4,
     name: "David Brown",
     role: "Commercial Specialist",
-    image: "https://i.pravatar.cc/300?img=14",
+    image: Image37,
     rating: "4.7",
     experience: "9+ Years",
     sold: "210+",

@@ -1,6 +1,6 @@
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
-
+import Image38 from "../assets/38.jpg";
 const AboutUs = () => {
   return (
     <>
@@ -38,10 +38,10 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-2 gap-12 mt-20 items-center">
 
             <img
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200"
-              alt="About EstateHub"
-              className="rounded-[32px] shadow-lg"
-            />
+  src={Image38}
+  alt="About EstateHub"
+  className="rounded-[32px] shadow-lg"
+/>
 
             <div>
               <h2 className="text-4xl font-bold text-[#0e1617]">

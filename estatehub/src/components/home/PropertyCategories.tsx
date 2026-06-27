@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
+import Image7 from "../../assets/7.jpg";
+import Image8 from "../../assets/8.jpg";
+import Image9 from "../../assets/9.jpg";
+import Image10 from "../../assets/10.jpg";
+import Image11 from "../../assets/11.jpg";
+import Image12 from "../../assets/12.jpg";
 const categories = [
   {
     id: 1,
@@ -8,8 +14,7 @@ const categories = [
     count: "1,250+ Properties",
     description:
       "Modern urban living with premium amenities and city connectivity.",
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&auto=format&fit=crop",
+    image: Image7,
   },
   {
     id: 2,
@@ -17,8 +22,7 @@ const categories = [
     count: "850+ Properties",
     description:
       "Private pools, spacious gardens and world-class interiors.",
-    image:
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&auto=format&fit=crop",
+    image: Image8,
   },
   {
     id: 3,
@@ -26,8 +30,7 @@ const categories = [
     count: "450+ Properties",
     description:
       "Exclusive skyline views and premium living experiences.",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&auto=format&fit=crop",
+    image: Image9,
   },
   {
     id: 4,
@@ -35,8 +38,7 @@ const categories = [
     count: "620+ Properties",
     description:
       "Prime office spaces and retail opportunities for businesses.",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop",
+    image: Image10,
   },
   {
     id: 5,
@@ -44,8 +46,7 @@ const categories = [
     count: "280+ Properties",
     description:
       "Luxury waterfront homes with breathtaking ocean views.",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop",
+    image: Image11,
   },
   {
     id: 6,
@@ -53,8 +54,7 @@ const categories = [
     count: "340+ Properties",
     description:
       "Peaceful countryside retreats surrounded by nature.",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop",
+    image: Image12,
   },
 ];
 

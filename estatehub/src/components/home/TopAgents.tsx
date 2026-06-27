@@ -1,11 +1,14 @@
 import { Star, ArrowUpRight } from "lucide-react";
+import Image31 from "../../assets/31.jpg";
+import Image32 from "../../assets/32.jpg";
+import Image33 from "../../assets/33.jpg";
 
 const agents = [
   {
     id: 1,
     name: "Sarah Johnson",
     role: "Senior Property Consultant",
-    image: "https://i.pravatar.cc/300?img=11",
+    image: Image31,
     rating: "4.9",
     properties: "250+",
     experience: "10+ Years",
@@ -15,7 +18,7 @@ const agents = [
     id: 2,
     name: "Michael Carter",
     role: "Real Estate Advisor",
-    image: "https://i.pravatar.cc/300?img=12",
+    image: Image32,
     rating: "4.8",
     properties: "180+",
     experience: "8+ Years",
@@ -25,7 +28,7 @@ const agents = [
     id: 3,
     name: "Emma Wilson",
     role: "Luxury Property Expert",
-    image: "https://i.pravatar.cc/300?img=13",
+    image: Image33,
     rating: "5.0",
     properties: "320+",
     experience: "12+ Years",

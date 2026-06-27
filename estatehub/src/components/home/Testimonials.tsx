@@ -1,11 +1,14 @@
 import { Star, Quote } from "lucide-react";
+import Image34 from "../../assets/34.jpg";
+import Image35 from "../../assets/35.jpg";
+import Image36 from "../../assets/36.jpg";
 
 const testimonials = [
   {
     id: 1,
     name: "Rahul Sharma",
     role: "Home Buyer",
-    image: "https://i.pravatar.cc/300?img=21",
+    image: Image34,
     property: "Luxury Villa",
     location: "Whitefield, Bangalore",
     review:
@@ -15,7 +18,7 @@ const testimonials = [
     id: 2,
     name: "Priya Mehta",
     role: "Property Investor",
-    image: "https://i.pravatar.cc/300?img=32",
+    image: Image35,
     property: "Commercial Space",
     location: "Mumbai",
     review:
@@ -25,7 +28,7 @@ const testimonials = [
     id: 3,
     name: "Arjun Verma",
     role: "Luxury Home Owner",
-    image: "https://i.pravatar.cc/300?img=41",
+    image: Image36,
     property: "Penthouse",
     location: "Delhi NCR",
     review:

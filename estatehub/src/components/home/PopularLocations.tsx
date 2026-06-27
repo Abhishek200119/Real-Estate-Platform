@@ -1,29 +1,29 @@
 import { ArrowUpRight, MapPin } from "lucide-react";
+import Image3 from "../../assets/3.jpg";
+import Image4 from "../../assets/4.jpg";
+import Image5 from "../../assets/5.jpg";
+import Image6 from "../../assets/6.jpg";
 
 const locations = [
   {
     city: "Bangalore",
     properties: "2,450+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+    image: Image3,
   },
   {
     city: "Mumbai",
     properties: "1,980+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2",
+    image: Image4,
   },
   {
     city: "Delhi",
     properties: "2,100+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1587474260584-136574528ed5",
+    image: Image5,
   },
   {
     city: "Hyderabad",
     properties: "1,750+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+    image: Image6,
   },
 ];
 

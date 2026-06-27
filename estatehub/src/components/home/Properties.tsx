@@ -3,6 +3,12 @@ import { Bed, Bath, MapPin, Star } from "lucide-react";
 
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
+import Image7 from "../../assets/7.jpg";
+import Image8 from "../../assets/8.jpg";
+import Image9 from "../../assets/9.jpg";
+import Image10 from "../../assets/10.jpg";
+import Image11 from "../../assets/11.jpg";
+import Image12 from "../../assets/12.jpg";
 
 const properties = [
   {
@@ -14,8 +20,7 @@ const properties = [
     baths: 4,
     area: "4500 Sq Ft",
     rating: "4.9",
-    image:
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200",
+    image: Image7,
   },
   {
     id: 2,
@@ -26,8 +31,7 @@ const properties = [
     baths: 2,
     area: "1800 Sq Ft",
     rating: "4.8",
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200",
+    image: Image8,
   },
   {
     id: 3,
@@ -38,8 +42,7 @@ const properties = [
     baths: 4,
     area: "3800 Sq Ft",
     rating: "5.0",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200",
+    image: Image9,
   },
   {
     id: 4,
@@ -50,8 +53,7 @@ const properties = [
     baths: 4,
     area: "5000 Sq Ft",
     rating: "4.7",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200",
+    image: Image10,
   },
   {
     id: 5,
@@ -62,8 +64,7 @@ const properties = [
     baths: 3,
     area: "4200 Sq Ft",
     rating: "4.9",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200",
+    image: Image11,
   },
   {
     id: 6,
@@ -74,8 +75,7 @@ const properties = [
     baths: 5,
     area: "7000 Sq Ft",
     rating: "4.8",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+    image: Image12,
   },
 ];
 
